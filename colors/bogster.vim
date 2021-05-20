@@ -186,6 +186,7 @@ call s:__hl("StatusLine", "fg1", "base1")
 call s:__hl("StatusLineNC", "fg1", "base5")
 call s:__hl("Ignore", "base5")
 call s:__hl("NonText", "base3")
+call s:__hl("Comment", "base6")
 
 "########################################
 " links
@@ -193,7 +194,6 @@ call s:__hl("NonText", "base3")
 hi! link Special BogsterLGreen
 hi! link Boolean Constant
 hi! link Character Constant
-hi! link Comment BogsterBase5
 hi! link Conceal Ignore
 hi! link Conditional Statement
 hi! link Constant Bogsterlteal
