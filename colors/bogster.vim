@@ -168,7 +168,7 @@ call s:__hl("CursorLineNr", "lblue", "base2")
 call s:__hl("DiffAdd", "green", "base0")
 call s:__hl("DiffChange", "yellow", "base0")
 call s:__hl("DiffDelete", "lred", "base0")
-call s:__hl("ErrorMsg", "red", "base1")
+call s:__hl("ErrorMsg", "base0", "red")
 call s:__hl("Error", "none", "lred")
 call s:__hl("Folded", "fg0", "base1")
 call s:__hl("MatchParen", "none", "base3")
@@ -177,12 +177,15 @@ call s:__hl("Pmenu", "fg0", "base1")
 call s:__hl("PmenuSel", "fg0", "base2")
 call s:__hl("Search", "base0", "fg1")
 call s:__hl("SignColumn", "none", "base0")
-call s:__hl("StatusLine", "base1", "base3")
-call s:__hl("StatusLineNC", "base1", "base3")
 call s:__hl("Todo", "fg0", "base0")
 call s:__hl("VertSplit", "base1", "base1")
 call s:__hl("Visual", "none", "base0", "reverse")
 call s:__hl("WarningMsg", "orange", "base1")
+
+call s:__hl("StatusLine", "fg1", "base1")
+call s:__hl("StatusLineNC", "fg1", "base5")
+call s:__hl("Ignore", "base5")
+call s:__hl("NonText", "base3")
 
 "########################################
 " links
@@ -219,8 +222,6 @@ hi! link ModeMsg BogsterFg0
 hi! link MoreMsg BogsterFg0
 hi! link MsgArea Title
 hi! link Noise Delimiter
-hi! link NonText BogsterBase3
-hi! link NonText Ignore
 hi! link Number BogsterBlue
 hi! link Operator BogsterOrange
 hi! link PreCondit PreProc
