@@ -418,3 +418,7 @@ hi! link vimHiGroup Identifier
 hi! link vimGroup Identifier
 hi! link vimContinue vimOper
 hi! link vimUserFunc Function
+
+" misc
+hi! link SpellBad BogsterRed
+hi! link SpellCap BogsterBlue
